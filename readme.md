@@ -140,3 +140,9 @@ Cleaner controllers → better structure.
 
 ---------------------------------------------**End**---------------------------------
 
+**IMPORTANT**
+
+CommonJS    -   exports.updateDocument =     ( require() is used to import  - Express, Node.js default)
+ES Modules (ESM)             - export const updateDocument   ( import is used to import  -  React, Next.js, modern Node  )
+
+***************************************************************************************************
