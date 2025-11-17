@@ -132,4 +132,11 @@ Cleaner controllers → better structure.
 5. models/Document.js
 6. utils/generateToken.js
 7. middleware/auth.middleware.js
-8. 
+8. middleware/error.middleware.js
+9. controllers/auth.controller.js
+10. controllers/document.controller.js
+11. routes/auth.routes.js
+12. routes/document.routes.js ( Here we protect the routes using **router.use(auth)** )
+
+---------------------------------------------**End**---------------------------------
+

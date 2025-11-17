@@ -1,6 +1,6 @@
-const moongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-const documentSchema = new moongoose.Schema(
+const documentSchema = new mongoose.Schema(
     {
         title: {
             type: String,
@@ -11,16 +11,16 @@ const documentSchema = new moongoose.Schema(
             default: {},
         },
         owner: {
-            type: moongoose.Schema.Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             ref: 'User',
             required: true,
         },
         collaborators: [{
-            type: moongoose.Schema.Types.ObjectId,
+            type: mongoose.Schema.Types.ObjectId,
             ref: 'User',
         }],
     },
     { timestamps: true }
 );
 
-module.exports = moongoose.model('Document', documentSchema);
+module.exports = mongoose.model('Document', documentSchema);
