@@ -17,6 +17,7 @@
     "git": "^0.1.5",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^7.0.0",
-    "mongoose": "^8.19.4"
+    "mongoose": "^8.19.4",
+    "socket.io": "^4.8.1"
   }
 }
