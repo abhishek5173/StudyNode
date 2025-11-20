@@ -16,7 +16,7 @@ exports.register = async (req, res) => {
     const user = await User.create({
       name,
       email,
-      password: hashedPassword,
+      passwordHash: hashedPassword,
     });
 
     res.json({
@@ -28,6 +28,7 @@ exports.register = async (req, res) => {
       },
     });
   } catch (error) {
+    console.log(error);
     res.status(500).json({ message: "Server error" });
   }
 };
@@ -52,6 +53,7 @@ exports.login = async (req, res) => {
             },
         });
     } catch (error) {
+      console.log(error);
         res.status(500).json({ message: "Server error" });
     }
 }
